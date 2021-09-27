@@ -54,11 +54,15 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 #define KC_UND  LCTL(KC_Z)	// UNDO
 
 // define macro hooks
-
-#define HOME_ADD MC(KC_A)
-#define WORK_ADD MC(KC_B)
-#define EMAIL_1  MC(KC_C)
-#define EMAIL_2  MC(KC_D)
+#define FLSCRN LCTL(LALT(LGUI(KC_F)))
+#define MXSCRN LCTL(LALT(LGUI(KC_M)))
+#define NTSCRN LCTL(LALT(LGUI(KC_N)))
+#define SEARCH LSFT(LGUI(KC_UP))
+#define LTSCRN LCTL(KC_LEFT)
+#define RTSCRN LCTL(KC_RIGHT)
+#define RPLACE LGUI(KC_F2)
+#define DLTROW LALT(LSFT(KC_BSPC))
+#define VSBACK LCTL(KC_MINS)
 
 #define USER_MACRO_FUNCTION   0 
 void process_user_macros(uint16_t macroid);
