@@ -10,3 +10,8 @@ firmware/keyboards/nyquist/.DS_Store
 firmware/keyboards/.DS_Store
 firmware/.DS_Store
 .DS_Store
+
+firmware/hardware_config.h
+firmware/keyboard_config.h
+firmware/keymap.cpp
+firmware/keymap.h
