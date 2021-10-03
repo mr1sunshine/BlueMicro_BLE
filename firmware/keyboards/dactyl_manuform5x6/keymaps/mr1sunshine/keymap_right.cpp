@@ -9,7 +9,7 @@ std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix = {
                                             DLTROW,  RPLACE,
                         L_RAISE, KC_ENT,
         KC_CAPS, KC_DEL,
-        KC_END,  KC_TILD
+        KC_TILD, KC_END
     )
 };
 
@@ -28,10 +28,10 @@ void setupKeymap() {
 
     uint32_t raise[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP( \
-                        _______,   _______, _______, _______,  _______, _______,  \
-                        KC_PGUP,   LTSCRN,  KC_UP,   RTSCRN,   _______, _______,  \
-                        KC_PGDOWN, KC_LEFT, KC_DOWN, KC_RIGHT, _______, _______,  \
-                        KC_PLUS,   KC_EQL,  _______, _______,  _______, KC_BSLS,  \
+                        SPTFY,     _______, _______, _______,  KC_MPLY, _______,  \
+                        KC_PGUP,   LTSCRN,  KC_UP,   RTSCRN,   KC_MSTP, _______,  \
+                        KC_PGDOWN, KC_LEFT, KC_DOWN, KC_RIGHT, KC_MNXT, _______,  \
+                        KC_PLUS,   KC_EQL,  _______, _______,  KC_MPRV, KC_BSLS,  \
                                             _______, _______,                    \
                         _______,   _______,                                      \
         _______, _______,                                      \
