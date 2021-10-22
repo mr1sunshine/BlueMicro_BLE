@@ -16,7 +16,7 @@ std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix = {
 void setupKeymap() {
     uint32_t press[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP(
-                        KC_6,    KC_7,    KC_8,     KC_9,    KC_0,      KC_MINS,
+                        KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,     KC_NO,
                         KC_Y,    KC_U,    KC_I,     KC_O,    KC_P,      KC_BSPACE,
                         KC_H,    KC_J,    KC_K,     KC_L,    KC_SCOLON, KC_QUOTE,
                         KC_N,    KC_M,    KC_COMMA, KC_DOT,  KC_SLSH,   KC_RSFT,
@@ -52,10 +52,10 @@ void setupKeymap() {
 
     uint32_t lower[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP( \
-                        KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,   \
-                        _______, _______, _______, _______, _______, _______,  \
-                        _______, _______, _______, _______, _______, _______,  \
-                        _______, _______, _______, _______, _______, KC_PIPE,  \
+                        _______, _______, _______, _______, _______,    _______,  \
+                        KC_GRV,  KC_LCBR, KC_RCBR, _______, _______,    _______,  \
+                        KC_TILD, S(KC_9), S(KC_0), KC_QUOT, S(KC_QUOT), _______,  \
+                        _______, KC_LBRC, KC_RBRC, _______, _______,    _______,  \
                                             _______, _______,                  \
                         _______, _______,                                      \
         _______, _______,                                      \
@@ -64,10 +64,10 @@ void setupKeymap() {
 
     uint32_t raise[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP( \
-                        SPTFY,     _______, _______, _______,  KC_MPLY, _______,  \
+                        _______,   _______, _______, _______,  KC_MPLY, _______,  \
                         KC_PGUP,   LTSCRN,  KC_UP,   RTSCRN,   KC_MSTP, _______,  \
                         KC_PGDOWN, KC_LEFT, KC_DOWN, KC_RIGHT, KC_MNXT, _______,  \
-                        KC_PLUS,   KC_EQL,  _______, _______,  KC_MPRV, KC_BSLS,  \
+                        NTSCRN,    MXSCRN,  FLSCRN,  SEARCH,   KC_MPRV, _______,  \
                                             _______, _______,                    \
                         _______,   _______,                                      \
         _______, _______,                                      \
