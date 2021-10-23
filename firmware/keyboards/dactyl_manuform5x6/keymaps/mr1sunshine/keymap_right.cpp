@@ -22,7 +22,7 @@ void setupKeymap() {
                         KC_N,  KC_M,  KC_COMMA, KC_DOT, KC_SLSH,   KC_CAPS,
                                             DLTROW,  RPLACE,
                         KC_NO, KC_NO,
-        KC_NO, KC_DEL,
+        KC_NO, KC_BSPACE,
         KC_NO, KC_NO
     );
 
@@ -58,7 +58,7 @@ void setupKeymap() {
                         KC_NO,   KC_LBRC, KC_RBRC, KC_NO,   KC_NO,      KC_NO,
                                             KC_NO, KC_NO,
                         _______, _______,
-        _______, _______,
+        _______, KC_DEL,
         _______, _______
     );
 
