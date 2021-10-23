@@ -21,7 +21,7 @@ void setupKeymap() {
                         KC_H,  KC_J,  KC_K,     KC_L,   KC_SCOLON, KC_QUOTE,
                         KC_N,  KC_M,  KC_COMMA, KC_DOT, KC_SLSH,   KC_CAPS,
                                             DLTROW,  RPLACE,
-                        L_RAISE, KC_NO,
+                        KC_NO, KC_NO,
         KC_NO, KC_DEL,
         KC_NO, KC_NO
     );
@@ -33,7 +33,7 @@ void setupKeymap() {
                     KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
                     KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
                                 KC_NO, KC_NO,
-                    KC_NO, KC_ENT,
+                    KC_TAB, KC_ENT,
         KC_NO, KC_NO,
         KC_NO, KC_NO
     );
@@ -45,7 +45,7 @@ void setupKeymap() {
                     KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
                     KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
                                 KC_NO, KC_NO,
-                    KC_NO, KC_RSFT,
+                    L_RAISE, KC_RSFT,
         KC_NO, KC_NO,
         KC_NO, KC_NO
     );
