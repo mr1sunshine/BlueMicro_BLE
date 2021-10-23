@@ -16,14 +16,14 @@ std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix = {
 void setupKeymap() {
     uint32_t press[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP(
-            KC_ESC,  KC_NO, KC_NO,    KC_NO,    KC_NO,    KC_NO,
-            KC_TAB,  KC_Q,  KC_W,     KC_E,     KC_R,     KC_T,
-            KC_LCTL, KC_A,  KC_S,     KC_D,     KC_F,     KC_G,
-            KC_LSFT, KC_Z,  KC_X,     KC_C,     KC_V,     KC_B,
-                        KC_LBRC, KC_RBRC,
-                                            KC_LGUI, KC_NO,
-                                                            KC_LALT, KC_SPC,
-                                                            KC_HOME, KC_GRAVE
+            KC_ESC,  KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+            KC_TAB,  KC_Q,  KC_W,  KC_E,  KC_R,  KC_T,
+            KC_LCTL, KC_A,  KC_S,  KC_D,  KC_F,  KC_G,
+            KC_LSFT, KC_Z,  KC_X,  KC_C,  KC_V,  KC_B,
+                        KC_NO, KC_NO,
+                                    KC_LGUI, KC_NO,
+                                                    KC_LALT, KC_NO,
+                                                    KC_NO,   KC_NO
     );
 
     uint32_t tap[MATRIX_ROWS][MATRIX_COLS] =
@@ -52,38 +52,38 @@ void setupKeymap() {
 
     uint32_t lower[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP( \
-            _______, _______, _______, _______, _______,    _______, \
-            KC_VOLU, KC_EXLM, KC_AT,   KC_PLUS, KC_EQL,     KC_BSLS, \
-            KC_VOLD, KC_AMPR, KC_HASH, KC_MINS, S(KC_MINS), KC_PIPE, \
-            KC_MUTE, KC_ASTR, KC_PERC, KC_CIRC, KC_DLR,     KC_SLSH, \
-                            KC_LCBR, KC_RCBR, \
-                                                _______, _______, \
-                                                                _______, _______, \
-                                                                _______, _______  \
+            KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,      KC_NO,
+            KC_VOLU, KC_EXLM, KC_AT,   KC_PLUS, KC_EQL,     KC_BSLS,
+            KC_VOLD, KC_AMPR, KC_HASH, KC_MINS, S(KC_MINS), KC_PIPE,
+            KC_MUTE, KC_ASTR, KC_PERC, KC_CIRC, KC_DLR,     KC_SLSH,
+                            KC_NO, KC_NO,
+                                                _______, _______,
+                                                                _______, _______,
+                                                                _______, _______
     );
 
     uint32_t raise[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP( \
-            _______, _______, _______, _______, _______, _______, \
-            KC_TAB,  _______, KC_7,    KC_8,    KC_9,    _______, \
-            KC_LCTL, _______, KC_4,    KC_5,    KC_6,    _______, \
-            KC_LSFT, _______, KC_1,    KC_2,    KC_3,    KC_0, \
-                            _______, _______, \
-                                                _______, _______, \
-                                                                _______, _______, \
-                                                                _______, _______  \
+            KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+            KC_TAB,  KC_NO, KC_7,  KC_8,  KC_9,  KC_NO,
+            KC_LCTL, KC_NO, KC_4,  KC_5,  KC_6,  KC_NO,
+            KC_LSFT, KC_NO, KC_1,  KC_2,  KC_3,  KC_0,
+                            KC_NO, KC_NO,
+                                                _______, _______,
+                                                                _______, _______,
+                                                                _______, _______
     );
 
     uint32_t adjust[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP( \
-            PRINT_BATTERY, _______, _______, _______, _______, _______, \
-            _______,       _______, KC_F7,   KC_F8,   KC_F9,   _______,\
-            _______,       _______, KC_F4,   KC_F5,   KC_F6,   _______,\
-            PRINT_INFO,    _______, KC_F1,   KC_F2,   KC_F3,   _______,\
-                                    _______, _______, \
-                                                    _______,_______, \
-                                                                    _______, _______, \
-                                                                    _______, _______  \
+            PRINT_BATTERY, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+            KC_NO,         KC_NO, KC_F7, KC_F8, KC_F9, KC_NO,
+            KC_NO,         KC_NO, KC_F4, KC_F5, KC_F6, KC_NO,
+            PRINT_INFO,    KC_NO, KC_F1, KC_F2, KC_F3, KC_NO,
+                                    KC_NO, KC_NO,
+                                                    _______,_______,
+                                                                    _______, _______,
+                                                                    _______, _______
     );
 
     for (int row = 0; row < MATRIX_ROWS; ++row)

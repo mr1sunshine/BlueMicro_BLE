@@ -32,6 +32,7 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 
 #define MANUFACTURER_NAME                   "/u/crystalhand"                      /**< Manufacturer. Will be passed to Device Information Service. */
 
+#define TIME_TILL_HOLD 200
 
 #if KEYBOARD_SIDE == LEFT
 #define KEYMAP( \
